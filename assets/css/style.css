@@ -8,9 +8,22 @@ body{
     justify-content: space-between;
     background-color: rgb(0, 42, 230);
     color: white;
-    padding: 1rem;
+    padding: 1rem 1rem;
 }
 
 .navbar-marca{
     color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+button{
+
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+
 }
