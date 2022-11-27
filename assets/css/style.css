@@ -20,6 +20,7 @@ img {
 
 @media (min-width:800px) {
     .grid-ppal {
+        grid-template-columns: 1fr 6fr;
         grid-template-areas:
             "h  t"
             "h  m"
@@ -76,6 +77,11 @@ img {
     border-radius: 1rem;
     overflow: hidden;
     padding-top: 30px;
+    display: none;
+}
+
+.card:nth-child(1){
+display: block;
 }
 
 .card-body {
@@ -92,21 +98,32 @@ img {
 }
 
 .cards {
-    display: grid;
-    gap: 0.5rem;
     grid-area: m;
 }
 
+.cards-items{
+
+    display: grid;
+    gap: 0.5rem;
+}
+
 @media (min-width:576px) {
-    .cards {
+    .cards-items {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
 
     }
 }
 
+@media (min-width:576px) {
+    .card{
+        display: block;
+        }
+        
+}
+
 @media (min-width:800px) {
-    .cards {
+    .cards-items {
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
     }
@@ -118,4 +135,9 @@ img {
     text-align: center;
     color: #fff;
     grid-area: f;
+}
+
+.paginacion{
+    text-align: center;
+    padding: 10px;
 }
