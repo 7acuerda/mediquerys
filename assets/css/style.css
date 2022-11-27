@@ -11,11 +11,11 @@ img {
 .grid-ppal {
     display: grid;
     grid-template-areas:
-            "h"
-            "t"
-            "m"
-            "f"
-        ;
+        "h"
+        "t"
+        "m"
+        "f"
+    ;
 }
 
 @media (min-width:800px) {
@@ -52,6 +52,37 @@ img {
     text-decoration: none;
 }
 
+.navbar-menu {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: start;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .button-menu {
+        display: none;
+    }
+
+    .menu-link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+}
+
 .button-menu {
 
     background-color: rgba(255, 255, 255, 0);
@@ -80,8 +111,8 @@ img {
     display: none;
 }
 
-.card:nth-child(1){
-display: block;
+.card:nth-child(1) {
+    display: block;
 }
 
 .card-body {
@@ -101,7 +132,7 @@ display: block;
     grid-area: m;
 }
 
-.cards-items{
+.cards-items {
 
     display: grid;
     gap: 0.5rem;
@@ -116,10 +147,10 @@ display: block;
 }
 
 @media (min-width:576px) {
-    .card{
+    .card {
         display: block;
-        }
-        
+    }
+
 }
 
 @media (min-width:800px) {
@@ -137,7 +168,7 @@ display: block;
     grid-area: f;
 }
 
-.paginacion{
+.paginacion {
     text-align: center;
     padding: 10px;
 }
